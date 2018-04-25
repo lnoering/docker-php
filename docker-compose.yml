@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    container_name: php
+    image: lnoering/php:latest
+    environment:
+      #- PHP_USER="phpfpm"
+      #- PHP_GROUP="phpfpm"
+      #- PHP_UID="1000"
+      #- PHP_GID="1000"
+      #- PHP_VERSION=7.2.5 
+      #- NGINX_USER="nginx"
+    restart: on-failure
